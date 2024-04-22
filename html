@@ -5,6 +5,63 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AoD, All of Disorder</title>
     <link rel="stylesheet" href="styles.css">
+   <style>
+       /* 한국어 폰트 추가 */
+       body {
+           font-family: '바탕체', 'Adonis', sans-serif;
+       }
+
+               /* 모든 텍스트와 이미지 정렬 및 색상 설정 */
+               body, h1, h2, h3, p, ul, li {
+                   color: #9298cc;
+                   text-align: left;
+               }
+
+               /* 영어 텍스트 폰트 설정 */
+               h1, h2, h3, p, ul, li {
+                   font-family: 'Adonis', sans-serif;
+               }
+
+               /* 이미지 정렬 */
+               img {
+                   display: block;
+                   margin-left: auto;
+                   margin-right: auto;
+               }
+
+               /* 슬라이드 쇼 버튼 스타일 설정 */
+               .prev, .next {
+                   cursor: pointer;
+                   position: absolute;
+                   top: 50%;
+                   width: auto;
+                   padding: 16px;
+                   margin-top: -22px;
+                   color: #9298cc;
+                   font-size: 20px;
+                   transition: 0.6s ease;
+                   border-radius: 0 3px 3px 0;
+                   user-select: none;
+               }
+
+               .next {
+                   right: 0;
+                   border-radius: 3px 0 0 3px;
+               }
+
+               /* 슬라이드 이미지 숨김 */
+               .slideshow {
+                   display: none;
+                   max-width: 100%;
+                   height: auto;
+               }
+
+               /* 저자, 책, 굿즈 설명 텍스트 폭 설정 */
+               .author-description, .book-description, .merchandise-description {
+                   max-width: 40%;
+                   margin: auto;
+               }
+           </style>
 </head>
 <body>
     <header>
@@ -199,31 +256,32 @@
     </section>
 
     <footer>
-        <p>AoD, All of Disorder</p>
-    </footer>
+           <p>AoD, All of Disorder</p>
+       </footer>
 
-    <script>
-        let slideIndex = 0;
-        showSlides(slideIndex);
+       <script>
+           // 슬라이드 기능 추가
+           let slideIndex = 0;
+           showSlides(slideIndex);
 
-        function plusSlides(n) {
-            showSlides(slideIndex += n);
-        }
+           function plusSlides(n) {
+               showSlides(slideIndex += n);
+           }
 
-        function currentSlide(n) {
-            showSlides(slideIndex = n);
-        }
+           function currentSlide(n) {
+               showSlides(slideIndex = n);
+           }
 
-        function showSlides(n) {
-            let i;
-            const slides = document.querySelectorAll('.slideshow');
-            if (n >= slides.length) {slideIndex = 0}
-            if (n < 0) {slideIndex = slides.length - 1}
-            for (i = 0; i < slides.length; i++) {
-                slides[i].style.display = 'none';
-            }
-            slides[slideIndex].style.display = 'block';
-        }
-    </script>
-</body>
-</html>
+           function showSlides(n) {
+               let i;
+               const slides = document.querySelectorAll('.slideshow');
+               if (n >= slides.length) {slideIndex = 0}
+               if (n < 0) {slideIndex = slides.length - 1}
+               for (i = 0; i < slides.length; i++) {
+                   slides[i].style.display = 'none';
+               }
+               slides[slideIndex].style.display = 'block';
+           }
+       </script>
+   </body>
+   </html>
