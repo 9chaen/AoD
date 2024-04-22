@@ -1,0 +1,92 @@
+body {
+    background-color: #ffffff;
+    color: #9298cc;
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #ffffff;
+    padding: 20px;
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+    font-size: 1.5em; /* 모든 버튼 텍스트 크기 */
+}
+
+section {
+    padding: 20px;
+}
+
+.author, .book, .merchandise {
+    margin-bottom: 20px;
+    text-align: left; /* 이미지와 텍스트 왼쪽 정렬 */
+}
+
+.author img, .book img, .merchandise img {
+    max-width: 100%; /* 이미지 폭을 최대로 확장 */
+    height: auto;
+}
+
+.author p, .book-description p, .merchandise-description p {
+    font-size: 0.8em; /* 설명글 작은 사이즈로 */
+}
+
+.author h3, .book-description h3, .merchandise-description h3 {
+    font-size: 1.5em; /* 저자, 책, 상품 이름 중간 사이즈로 */
+}
+
+.author, .book-description, .merchandise-description {
+    width: 100%; /* 텍스트 폭을 이미지 폭에 맞춤 */
+}
+
+.slide-container {
+    position: relative;
+}
+
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: transparent;
+    color: #9298cc;
+    border: none;
+    font-size: 1.5em;
+    cursor: pointer;
+}
+
+.prev {
+    left: 0;
+}
+
+.next {
+    right: 0;
+}
+
+footer {
+    background-color: #ffffff;
+    text-align: center;
+    padding: 20px;
+}
+
+#main-logo {
+    display: block;
+    margin: 0 auto;
+}
+
+#main-description {
+    text-align: center;
+    font-size: 0.8em; /* 설명글 가장 작은 사이즈로 */
+}
