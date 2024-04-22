@@ -33,18 +33,31 @@
         .author-name {
             margin-top: 7px;
         }
+      
+/* 링크 스타일 제거 및 글자 색상 지정 */
         nav ul {
             list-style-type: none;
             padding: 0;
-            margin: 0; /* 추가: 기본 마진 제거 */
         }
 
+        nav ul li {
+            display: inline;
+        }
+
+        nav a {
+            text-decoration: none; /* 밑줄 제거 */
+            color: #9298cc; /* 버튼 글자색 */
+            padding: 10px; /* 버튼 간격 조절 */
+        }
+
+        /* 버튼 사이 공백 조절 */
+        nav a:not(:last-child) {
+            margin-right: 20px;
+        }
 nav ul li {
     display: inline;
     margin-right: 20px; /* 각 항목 사이 간격 조절 */
-}
-
-       
+} 
     </style>
 </head>
 <body>
