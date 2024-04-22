@@ -1,0 +1,45 @@
+body {
+    background-color: #ffffff; /* 하얀 배경 */
+    color: #9298cc; /* 파란 글자 */
+    font-family: 'Arial', sans-serif; /* 설정한 서체 */
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #ffffff; /* 헤더 배경색 */
+    padding: 20px;
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+section {
+    padding: 20px;
+}
+
+.author, .book, .merchandise {
+    margin-bottom: 20px;
+}
+
+.author img, .book img, .merchandise img {
+    max-width: 40%;
+    height: auto;
+}
+
+footer {
+    background-color: #ffffff; /* 푸터 배경색 */
+    text-align: center;
+    padding: 20px;
+}
