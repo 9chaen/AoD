@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Author 여연경</title>
+    <style>
+        body {
+            background-color: #fffffa;
+            font-family: "Sandoll 명조Neo1", Constantia, sans-serif;
+            color: #9298cc;
+            text-align: center;
+        }
+        h1 {
+            font-size: 36px;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            margin-top: 20px;
+        }
+        .author-description {
+            margin-top: 20px;
+        }
+        .back-button {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            font-family: Arial, sans-serif;
+            font-size: 16px;
+            color: #9298cc;
+            cursor: pointer;
+            border: none;
+            background: none;
+        }
+    </style>
+</head>
+<body>
+    <h1>여연경</h1>
+    <img src="author2.jpg" alt="여연경">
+    <div class="author-description">
+        <p>다섯 번째 유서, 우울 파르페의 저자, 2002년 수원 출생, 수능 중독에서 벗어난 지 1년차입니다.</p>
+    </div>
+    <button class="back-button" onclick="goBack()">뒤로가기</button>
+
+    <script>
+        function goBack() {
+            window.history.back();
+        }
+    </script>
+</body>
+</html>
