@@ -10,3 +10,18 @@
 .image-container img:last-child {
     margin-right: 0; /* 마지막 이미지의 오른쪽 마진 제거 */
 }
+
+nav ul {
+    list-style-type: none; /* 리스트 마커 제거 */
+    padding: 0; /* 리스트의 패딩 제거 */
+    margin: 0; /* 리스트의 마진 제거 */
+}
+
+nav ul li {
+    display: inline; /* 리스트 항목을 인라인 요소로 배치 */
+    margin-right: 20px; /* 각 항목 사이의 간격 조정 */
+}
+
+nav ul li:last-child {
+    margin-right: 0; /* 마지막 항목의 오른쪽 여백 제거 */
+}
