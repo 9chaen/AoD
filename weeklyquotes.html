@@ -29,12 +29,12 @@
         }
     
         .quote-item {
-            flex: 0 0 20%;
-            max-width: 20%;
-            margin: 35px;
-            text-align: left;
-            padding: 10px;
-        }
+    flex: 0 0 calc(20% - 20px); /* 기존의 20px에서 이미지 간격인 10px을 빼줍니다. */
+    max-width: calc(20% - 20px); /* 기존의 20px에서 이미지 간격인 10px을 빼줍니다. */
+    margin: 35px 10px; /* 이미지 간의 상하 간격은 유지하고 좌우 간격을 10px로 조정합니다. */
+    text-align: left;
+    padding: 10px;
+}
 
         .quote-title {
             margin-top: 7px;
