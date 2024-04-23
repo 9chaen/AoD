@@ -9,81 +9,84 @@
         body {
             background-color: #fffffa;
             text-align: left;
-            margin-left: 3.5vw;
+            margin-left: 35px
         }
         h1 {
-            font-size: 4.8vw;
-            margin-top: 2vw;
-            margin-left: 3vw;
+            font-size: 48px;
+            margin-top: 20px;
+            margin-left: 30px
         }
          h2 {
-            font-size: 3.5vw;
-            margin-top: 2vw;
-            margin-left: 3.5vw;
+            font-size: 35px;
+            margin-top: 20px;
+            margin-left: 35px
         }
         .book-container {
             display: flex;
             flex-wrap: wrap;
             justify-content: flex-start;
-            margin-top: 2vw;
+            margin-top: 20px;
         }
     
         .book-item {
             flex: 0 0 20%;
             max-width: 20%;
-            margin: 3.5vw;
+            margin: 35px;
             text-align: left;
-            padding: 1vw;
-            box-sizing: border-box;
+            padding: 10px;
+            box-sizing: border-box; /* 요소의 폭과 높이에 padding과 border를 포함하도록 설정 */
         }
         .book-item img {
-            width: 100%;
-            height: auto;
-            display: block;
-            margin-bottom: 1vw;
+            width: 100%; /* 이미지가 부모 요소의 폭을 채우도록 설정 */
+            height: auto; /* 이미지의 세로 비율을 유지함 */
+            display: block; /* 이미지를 블록 요소로 설정하여 수직 정렬이 제대로 이루어지도록 함 */
+            margin-bottom: 10px; /* 이미지 아래 여백 추가 */
         }
         .book-title {
             color: #9298cc;
-            font-size: 1.6vw;
-            margin: 0;
+            font-size: 16px; /* 텍스트 크기 조정 */
+            margin: 0; /* 기본 마진 제거 */
             box-sizing: border-box;
         }
 
         nav ul li {
             display: inline;
-            margin-left: -1vw;
-            margin-right: 2vw;
+            margin-left: -10px;
+            margin-right: 20px; /* 각 항목 사이 간격 조절 */
         }
 
         nav a {
-            text-decoration: none;
-            color: #9298cc;
-            padding: 1vw;
+            text-decoration: none; /* 밑줄 제거 */
+            color: #9298cc; /* 버튼 글자색 */
+            padding: 10px; /* 버튼 간격 조절 */
         }
 
+        /* 버튼 사이 공백 조절 */
         nav a:not(:last-child) {
-            margin-right: 2vw;
+            margin-right: 20px;
         }
 
-        h1 ul {
-           list-style-type: none;
-           padding: 0;
-        }
 
-        h1 ul li {
-            display: inline;
-        }
+h1 ul {
+   list-style-type: none;
+    padding: 0;
+}
 
-        h1 a {
-            text-decoration: none;
-            color: #9298cc;
-            padding: 1vw;
-        }
+h1 ul li {
+    display: inline;
+}
 
-        a {
-            text-decoration: none;
-            color: #9298cc;
-        }
+h1 a {
+    text-decoration: none; /* 밑줄 제거 */
+            color: #9298cc; /* 버튼 글자색 */
+            padding: 10px; /* 버튼 간격 조절 */
+}
+
+                a {
+    text-decoration: none; /* 밑줄 제거 */
+    color: #9298cc; /* 텍스트 색상 변경 */
+    /* 다른 원하는 스타일 추가 */
+}
         
     </style>
 </head>
@@ -97,7 +100,7 @@
             <li><a href="books.html">books</a></li>
             <li><a href="goods.html">goods shop</a></li>
             <li><a href="weeklyquotes.html">weekly quotes</a></li>
-            <li><a href="https://www.instagram.com/aod.inc/">instagram</a></li>
+            <li><a href="https://www.instagram.com/aod.inc?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==">instagram</a></li>
             
         </ul>
     </nav>
@@ -105,43 +108,43 @@
     <div class="book-container">
         <div class="book-item">
             <a href="book 1989.5.35..html">
-                <img src="1989.5.35. 00.jpg" width="30vw" height="auto" alt="book7">
+                <img src="1989.5.35. 00.jpg" width="300px" height="auto" alt="book7">
                 <p class="book-title">1989.5.35.</p>
             </a>
         </div>
         <div class="book-item">
             <a href="book 우울 파르페.html">
-                <img src="우울 파르페 00.jpg" width="30vw" height="auto" alt="book6">
+                <img src="우울 파르페 00.jpg" width="300px" height="auto" alt="book6">
                 <p class="book-title">우울 파르페</p>
             </a>
         </div>
         <div class="book-item">
             <a href="book Whats in my blue.html">
-                <img src="whats in my blue 00.jpg" width="30vw" height="auto" alt="book5">
+                <img src="whats in my blue 00.jpg" width="300px" height="auto" alt="book5">
                 <p class="book-title">What's in my blue?</p>
             </a>
         </div>
         <div class="book-item">
             <a href="book 사낚어.html">
-                <img src="사낚어 00.JPG" width="30vw" height="auto" alt="book4">
+                <img src="사낚어 00.JPG" width="300px" height="auto" alt="book4">
                 <p class="book-title">사람낚는어부가되기에는낚아야할생각이너무많아만든책</p>
             </a>
         </div>
         <div class="book-item">
             <a href="book 우울증.html">
-                <img src="우울증 00.JPG" width="30vw" height="auto" alt="book3">
+                <img src="우울증 00.JPG" width="300px" height="auto" alt="book3">
                 <p class="book-title">우울증</p>
             </a>
         </div>
         <div class="book-item">
             <a href="book 우리 중 아무도 그곳을 모른다.html">
-                <img src="우리 중 아무도 그곳을 모른다 00.JPG" width="30vw" height="auto" alt="book2">
+                <img src="우리 중 아무도 그곳을 모른다 00.JPG" width="300px" height="auto" alt="book2">
                 <p class="book-title">우리 중 아무도 그곳을 모른다</p>
             </a>
         </div>
         <div class="book-item">
             <a href="book 다섯 번째 유서.html">
-                <img src="다섯 번째 유서 00.jpg" width="30vw" height="auto" alt="book1">
+                <img src="다섯 번째 유서 00.jpg" width="300px" height="auto" alt="book1">
                 <p class="book-title">다섯 번째 유서</p>
             </a>
         </div>
