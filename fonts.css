@@ -1,13 +1,15 @@
 @font-face {
     font-family: 'Constantia';
-    src: url('constan.ttf') format('truetype');
+    src: url('constan.ttf') format('truetype'),
+    src: url('constan.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Onul 아티클 부리 Regular';
-    src: url('Onul ArticleBuri.ttf') format('truetype');
+    src: url('Onul ArticleBuri.ttf') format('truetype'),
+    src: url('Onul ArticleBuri.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
