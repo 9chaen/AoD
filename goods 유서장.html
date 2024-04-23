@@ -14,12 +14,12 @@
         h1 {
             font-size: 25px;
             position: center;
-            top: 20px
+            top: 20px;
         }               
         h2 {
             font-size: 20px;
             position: center;
-            top: 20px
+            top: 20px;
         }
         
         img {
@@ -29,7 +29,7 @@
         }
         .goods-description {
             margin-top: 10px;
-            font-size: 13pt
+            font-size: 13pt;
             line-height: 20pt;
         }
         .back-button {
@@ -43,8 +43,43 @@
             border: none;
             background: none;
         }
+        .goods-container {
+            width: 80%;
+            margin: 0 auto;
+            position: relative;
+            overflow: hidden;
+            margin-top: 20px;
+        }
+        .goods-slider {
+            display: flex;
+            transition: transform 0.5s ease;
+        }
+        .goods-item {
+            min-width: 100%
+        }
         .goods-container .goods-item {
-            width: 100px; /* 이미지와 <p> 요소의 폭을 동일하게 설정 */
+            width: 100%; /* 수정된 부분 */
+            display: none; /* 초기에 모든 이미지 숨김 */
+            text-align: left; /* 이미지 및 설명 텍스트 왼쪽 정렬 */
+            margin-top: 20px; /* 이미지 간격 조절 */
+        }
+         .book-container button {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background-color: #fffffa;
+            border: none;
+            color: #9298cc;
+            font-size: 24px;
+            cursor: pointer;
+            z-index: 1;
+            padding: 10px;
+        }
+        .prev {
+            left: 0;
+        }
+        .next {
+            right: 0;
         }
 
         .goods-container img {
@@ -56,17 +91,60 @@
 </head>
 <body>
     <h1>Goods Shop</h1>
-    <img src="goods 유서장 00.JPG" alt="유서장">
-    <h2>유서장 2</h2>
-    <div class="goods-description">
-        <p>자신의 괴로움을 글로 적어 털어낼 수 있는 작은 유서장(엽서).</p>
+    <div class="goods-container">
+        <button class="prev" onclick="prevSlide()">&#10094;</button>
+        <div class="goods-slider">
+        <div class="goods-item">
+            <img src="goods 유서장 00.JPG" alt="유서장 1">
+        </div>
+        <div class="goods-item">
+            <img src="goods 유서장 01.JPG" alt="유서장 2">
+        </div>
+        <div class="goods-item">
+            <img src="goods 유서장 02.JPG" alt="유서장 3">
+        </div>
+        <div class="goods-item">
+            <img src="goods 유서장 03.JPG" alt="유서장 4">
+        </div>
     </div>
-    <button class="back-button" onclick="goBack()">←</button>
+    <button class="next" onclick="nextSlide()">&#10095;</button>
+    </div>
+            <h2>유서장 2종</h2>
+            <div class="goods-description">
+                <p>자신의 괴로움을 글로 적어 털어낼 수 있는 작은 유서장(엽서).
+                <br><br><br>148*210mm / 2종 / 1 장 1,500원</p>
+            </div>
+    </div>
+ 
 
     <script>
-        function goBack() {
-            window.history.back();
+        let slideIndex = 0;
+        const slides = document.querySelectorAll('.goods-item');
+
+        function showSlides() {
+            slides.forEach(slide => slide.style.display = 'none');
+            slides[slideIndex].style.display = 'block';
         }
+
+        function prevSlide() {
+            if (slideIndex === 0) {
+                slideIndex = slides.length - 1;
+            } else {
+                slideIndex--;
+            }
+            showSlides();
+        }
+
+        function nextSlide() {
+            if (slideIndex === slides.length - 1) {
+                slideIndex = 0;
+            } else {
+                slideIndex++;
+            }
+            showSlides();
+        }
+
+        showSlides();
     </script>
 </body>
 </html>
