@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weekly Quote</title>
+    </title>
+    <link rel="stylesheet" href="fonts.css">
+    <style>
+        body {
+            background-color: #fffffa;
+            text-align: center;
+        }
+        h1 {
+            font-size: 25px;
+            position: center;
+            top: 20px
+        }               
+        h2 {
+            font-size: 20px;
+            position: center;
+            top: 20px
+        }
+        
+        img {
+            max-width: 60%;
+            height: auto;
+            margin-top: 20px;
+        }
+
+        .back-button {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            font-family: Arial, sans-serif;
+            font-size: 16px;
+            color: #9298cc;
+            cursor: pointer;
+            border: none;
+            background: none;
+        }
+        .quote-container .quote-item {
+            width: 100px; /* 이미지와 <p> 요소의 폭을 동일하게 설정 */
+        }
+
+        .quote-container img {
+            width: 100%; /* 이미지가 부모 요소의 폭을 채우도록 설정 */
+            height: auto; /* 이미지의 세로 비율을 유지함 */
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Weekly Quote</h1>
+    <img src="quote 240420 01.jpg" alt="240420">
+    <h2>2024.04.20.</h2>
+
+    <button class="back-button" onclick="goBack()">←</button>
+
+    <script>
+        function goBack() {
+            window.history.back();
+        }
+    </script>
+</body>
+</html>
