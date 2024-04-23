@@ -57,12 +57,6 @@
         .goods-item {
             min-width: 100%
         }
-        .goods-container .goods-item {
-            width: 100%; /* 수정된 부분 */
-            display: none; /* 초기에 모든 이미지 숨김 */
-            text-align: left; /* 이미지 및 설명 텍스트 왼쪽 정렬 */
-            margin-top: 20px; /* 이미지 간격 조절 */
-        }
          .book-container button {
             position: absolute;
             top: 50%;
@@ -118,33 +112,37 @@
  
 
     <script>
-        let slideIndex = 0;
-        const slides = document.querySelectorAll('.goods-item');
+         let slideIndex = 1;
 
         function showSlides() {
-            slides.forEach(slide => slide.style.display = 'none');
-            slides[slideIndex].style.display = 'block';
+            const slides = document.querySelectorAll('.book-item');
+            if (slideIndex < 1) {
+                slideIndex = slides.length;
+            }
+            if (slideIndex > slides.length) {
+                slideIndex = 1;
+            }
+            slides.forEach(slide => {
+                slide.style.display = 'none';
+            });
+            slides[slideIndex - 1].style.display = 'block';
         }
 
         function prevSlide() {
-            if (slideIndex === 0) {
-                slideIndex = slides.length - 1;
-            } else {
-                slideIndex--;
-            }
+            slideIndex--;
             showSlides();
         }
 
         function nextSlide() {
-            if (slideIndex === slides.length - 1) {
-                slideIndex = 0;
-            } else {
-                slideIndex++;
-            }
+            slideIndex++;
             showSlides();
         }
 
         showSlides();
+
+        function goBack() {
+            window.history.back();
+        }
     </script>
 </body>
 </html>
