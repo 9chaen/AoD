@@ -28,7 +28,7 @@
         }
         .book-description {
             margin-top: 10px;
-            font-size: 13pt
+            font-size: 13pt;
             line-height: 20pt;
         }
         .back-button {
@@ -42,29 +42,98 @@
             border: none;
             background: none;
         }
-        .book-container .book-item {
-            width: 100px; /* 이미지와 <p> 요소의 폭을 동일하게 설정 */
+        .book-container {
+            width: 80%;
+            margin: 0 auto;
+            position: relative;
+            overflow: hidden;
+            margin-top: 20px;
         }
-
-        .book-container img {
-            width: 100%; /* 이미지가 부모 요소의 폭을 채우도록 설정 */
-            height: auto; /* 이미지의 세로 비율을 유지함 */
+        .book-slider {
+            display: flex;
+            transition: transform 0.5s ease;
         }
-
+        .book-item {
+            min-width: 100%;
+        }
+        .book-container button {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background-color: #fffffa;
+            border: none;
+            color: #9298cc;
+            font-size: 24px;
+            cursor: pointer;
+            z-index: 1;
+            padding: 10px;
+        }
+        .prev {
+            left: 0;
+        }
+        .next {
+            right: 0;
+        }
     </style>
 </head>
 <body>
     <h1>book</h1>
-    <img src="다섯 번째 유서 00.jpg" alt="다섯 번째 유서">
+    <div class="book-container">
+        <button class="prev" onclick="prevSlide()">&#10094;</button>
+        <div class="book-slider">
+            <div class="book-item">
+                <img src="우리 중 아무도 그곳을 모른다 00.jpg" alt="우아모 00">
+            </div>
+            <div class="book-item">
+                <img src="우리 중 아무도 그곳을 모른다 01.jpg" alt="우아모 01">
+            </div>
+            <div class="book-item">
+                <img src="우리 중 아무도 그곳을 모른다 02.jpg" alt="우아모 02">
+            </div>
+            <div class="book-item">
+                <img src="우리 중 아무도 그곳을 모른다 03.jpg" alt="우아모 03">
+            </div>
+        </div>
+        <button class="next" onclick="nextSlide()">&#10095;</button>
+    </div>
     <h2>다섯 번째 유서</h2>
     <div class="book-description">
-        <p>다섯 번째 유서: 대학 시험에 3년 연속 떨어졌습니다. 모두 실패했지만, 아무것도 남지 않은 것은 아닙니다.<br>공허함을 글로 쓸 수 있게 되었습니다. 시간이 흐르면 모든 것이 변합니다.
-            <br>저는 입시 앞에 무력해진 대신 책을 쓸 수 있는 사람이 되었습니다. 대학교에서 생활할 날들을 병원에서 나기도 했고,<br>그곳에서 좋은 인연을 만나기도 했습니다. 그동안 성장하며 쓴 글을 나누고자 책을 엮었습니다.<br>그리고 이 책을 마지막 유서로 여기려 합니다.
-        <br><br><br>128*196mm / 에세이 / 96p / 10,000원</p>
+        <p>정신질환자와 폐쇄병동에 대한 편견을 깨부수고자 만든
+            <br>아무도 알려주지 않았던 폐쇄병동에 대한 전반적인 지식과 주관적인 감상을 담은
+            <br>위트 있는 안내 그래픽 노블입니다.
+        <br><br><br>210*297mm / 일러스트 / 23p / 10,000원</p>
     </div>
     <button class="back-button" onclick="goBack()">←</button>
 
     <script>
+        let slideIndex = 1;
+
+        function showSlides() {
+            const slides = document.querySelectorAll('.book-item');
+            if (slideIndex < 1) {
+                slideIndex = slides.length;
+            }
+            if (slideIndex > slides.length) {
+                slideIndex = 1;
+            }
+            slides.forEach(slide => {
+                slide.style.display = 'none';
+            });
+            slides[slideIndex - 1].style.display = 'block';
+        }
+
+        function prevSlide() {
+            slideIndex--;
+            showSlides();
+        }
+
+        function nextSlide() {
+            slideIndex++;
+            showSlides();
+        }
+
+        showSlides();
+
         function goBack() {
             window.history.back();
         }
