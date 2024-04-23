@@ -55,9 +55,9 @@
             transition: transform 0.5s ease;
         }
         .goods-item {
-            min-width: 100%
+            min-width: 100%;
         }
-         .book-container button {
+        .goods-container button {
             position: absolute;
             top: 50%;
             transform: translateY(-50%);
@@ -115,7 +115,7 @@
          let slideIndex = 1;
 
         function showSlides() {
-            const slides = document.querySelectorAll('.book-item');
+            const slides = document.querySelectorAll('.goods-item');
             if (slideIndex < 1) {
                 slideIndex = slides.length;
             }
@@ -139,10 +139,6 @@
         }
 
         showSlides();
-
-        function goBack() {
-            window.history.back();
-        }
     </script>
 </body>
 </html>
