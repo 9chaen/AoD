@@ -1,1 +1,72 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Goods 유서장</title>
+    <style>
+        body {
+            background-color: #fffffa;
+            font-family: "Constantia", "Onul 아티클 부리 Regular", sans-serif;
+            color: #9298cc;
+            text-align: center;
+        }
+        h1 {
+            font-size: 25px;
+            position: center;
+            top: 20px
+        }               
+        h2 {
+            font-size: 20px;
+            position: center;
+            top: 20px
+        }
+        
+        img {
+            max-width: 30%;
+            height: auto;
+            margin-top: 20px;
+        }
+        .goods-description {
+            margin-top: 10px;
+            font-size: 13pt
+            line-height: 20pt;
+        }
+        .back-button {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            font-family: Arial, sans-serif;
+            font-size: 16px;
+            color: #9298cc;
+            cursor: pointer;
+            border: none;
+            background: none;
+        }
+        .goods-container .goods-item {
+            width: 100px; /* 이미지와 <p> 요소의 폭을 동일하게 설정 */
+        }
 
+        .goods-container img {
+            width: 100%; /* 이미지가 부모 요소의 폭을 채우도록 설정 */
+            height: auto; /* 이미지의 세로 비율을 유지함 */
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Goods Shop</h1>
+    <img src="goods 유서장 00.JPG" alt="유서장">
+    <h2>유서장 2</h2>
+    <div class="goods-description">
+        <p>자신의 괴로움을 글로 적어 털어낼 수 있는 작은 유서장(엽서).</p>
+    </div>
+    <button class="back-button" onclick="goBack()">←</button>
+
+    <script>
+        function goBack() {
+            window.history.back();
+        }
+    </script>
+</body>
+</html>
