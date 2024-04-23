@@ -130,25 +130,30 @@
                 <img src="우리 중 아무도 그곳을 모른다 00.JPG" alt="우아모 00"  onclick="openModal('우리 중 아무도 그곳을 모른다 00.JPG')">
             </div>
             <div class="book-item">
-                <img src="우리 중 아무도 그곳을 모른다 01.jpg" alt="우아모 01"  onclick="openModal('우리 중 아무도 그곳을 모른다 01.jpg')">
+                <img src="우리 중 아무도 그곳을 모른다 01.jpg" alt="우아모 01" onclick="openModal('우리 중 아무도 그곳을 모른다 01.jpg')">
             </div>
             <div class="book-item">
-                <img src="우리 중 아무도 그곳을 모른다 02.jpg" alt="우아모 02"  onclick="openModal('우리 중 아무도 그곳을 모른다 02.jpg')">
+                <img src="우리 중 아무도 그곳을 모른다 02.jpg" alt="우아모 02" onclick="openModal('우리 중 아무도 그곳을 모른다 02.jpg')">
             </div>
             <div class="book-item">
-                <img src="우리 중 아무도 그곳을 모른다 03.jpg" alt="우아모 03"  onclick="openModal('우리 중 아무도 그곳을 모른다 03.jpg')">
+                <img src="우리 중 아무도 그곳을 모른다 03.jpg" alt="우아모 03" onclick="openModal('우리 중 아무도 그곳을 모른다 03.jpg')">
             </div>
         </div>
         <button class="next" onclick="nextSlide()">&#10095;</button>
     </div>
-    <h2>우리 중 아무도 그곳을 모른다</h2>
+    <h2>다섯 번째 유서</h2>
     <div class="book-description">
-        <p>정신질환자와 폐쇄병동에 대한 편견을 깨부수고자 만든
-            <br>아무도 알려주지 않았던 폐쇄병동에 대한 전반적인 지식과 주관적인 감상을 담은
-            <br>위트 있는 안내 그래픽 노블입니다.
+        <p>정신질환자와 폐쇄병동에 대한 편견을 깨부수고자 만들었습니다.
+            <br>아무도 알려주지 않았던 폐쇄병동에 대한 전반적인 지식과 주관적인 감상을 담은 위트 있는 안내 그래픽 노블입니다.
         <br><br><br>210*297mm / 일러스트 / 23p / 10,000원</p>
     </div>
 
+    <div id="myModal" class="modal">
+    <span class="close" onclick="closeModal()"></span>
+    <div class="modal-content">
+        <img id="modalImg" src="" alt="modal image">
+    </div>
+</div>
     
     <button class="back-button" onclick="goBack()">←</button>
 
@@ -184,7 +189,7 @@
         function goBack() {
             window.history.back();
         }
- 
+        
           // 이미지를 클릭했을 때 모달 창 열기
         function openModal(imgSrc) {
             var modal = document.getElementById("myModal");
@@ -201,4 +206,3 @@
     </script>
 </body>
 </html>
-
