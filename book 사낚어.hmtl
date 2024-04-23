@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Book 사낚어</title>
+    <title>Book 사람낚는어부가되기에는낚아야할생각이너무많아만든책</title>
     <style>
         body {
             background-color: #fffffa;
@@ -90,61 +90,9 @@
 
 .modal-content {
     margin: auto;
-    display: block;
-    width: 70%; /* 이미지 너비 */
-    max-width: 100%; /* 최대 너비 설정 */
-    height: auto; /* 이미지 높이 자동 조절 */
-}
-
-.modal-content img {
-    max-width: 100%; /* 이미지 최대 너비 */
-    max-height: 100%; /* 이미지 최대 높이 */
-    display: block;
-    margin: auto; /* 이미지를 가운데 정렬합니다. */
-}
-
-
-        /* 닫기 버튼 */
-       .close {
-    color: #9298cc;
-    position: absolute;
-    top: 10px;
-    right: 25px;
-    font-size: 35px;
-    font-weight: bold;
-    transition: 0.3s;
-}
-
-.close:before {
-    content: "×"; /* 닫기 버튼 모양 */
-}
-
-    </style>
-</head>
-<body>
-    <h1>book</h1>
-    <div class="book-container">
-        <button class="prev" onclick="prevSlide()">&#10094;</button>
-        <div class="book-slider">
-            <div class="book-item">
-                <img src="사낚어 00.JPG" alt="사낚어 00"  onclick="openModal('사낚어 00.JPG')">
-            </div>
-            <div class="book-item">
-                <img src="사낚어 01.jpg" alt="사낚어 01" onclick="openModal('사낚어 01.jpg')">
-            </div>
-            <div class="book-item">
-                <img src="사낚어 02.jpg" alt="사낚어 02" onclick="openModal('사낚어 02.jpg')">
-            </div>
-            <div class="book-item">
-                <img src="사낚어 03.jpg" alt="사낚어 03" onclick="openModal('사낚어 03.jpg')">
-            </div>
-        </div>
-        <button class="next" onclick="nextSlide()">&#10095;</button>
-    </div>
-    <h2>사람낚는어부가되기에는낚아야할생각이너무많아만든책</h2>
+    d책</h2>
     <div class="book-description">
-        <p살면서 누구나 한 번쯤 느끼는 자신을 향한 혐오, 타인을 향한 혐오, 사회를 향한 혐오.
-        <br>그 상처 언저리에서 발견하는 슬픔이 가진 위로의 힘을 담은 그래픽 노블입니다. 
+        <p>살면서 누구나 한 번쯤 느끼는 자신을 향한 혐오, 타인을 향한 혐오, 사회를 향한 혐오.<br>그 상처 언저리에서 발견하는 슬픔이 가진 위로의 힘을 담은 그래픽 노블입니다.
         <br><br><br>210*297mm / 일러스트 / 32p / 10,000원</p>
     </div>
 
