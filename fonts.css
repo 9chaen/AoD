@@ -1,10 +1,10 @@
 @font-face {
     font-family: 'Constantia'; /* 폰트 패밀리명 */
-    src: url('https://github.com/9chaen/AoD/blob/main/constan.ttf') format('truetype'); /* 폰트 파일 경로 및 형식 */
+    src: url('constan.ttf') format('truetype'); /* 폰트 파일 경로 및 형식 */
     font-weight: normal; /* 폰트 두께 */
     font-style: normal; /* 폰트 스타일 */
     font-family: 'Onul ArticleBuri Regular';
-    src: url('https://github.com/9chaen/AoD/blob/main/Onul%20ArticleBuri%20Regular.ttf) format('truetype');
+    src: url('Onul ArticleBuri.ttf) format('truetype');
     font-weight: normal; /* 폰트 두께 */
     font-style: normal; /* 폰트 스타일 */
 }
