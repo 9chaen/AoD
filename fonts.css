@@ -1,5 +1,5 @@
 @font-face {
-    font-family: 'Constantia', 'Onul ArticleBuri Regular'; /* 폰트 패밀리명 */
+    font-family: 'Constantia', 'Onul 아티클 부리 Regular'; /* 폰트 패밀리명 */
     src: url('constan.ttf') format('opentype'); /* 폰트 파일 경로 및 형식 */
     src: url('Onul ArticleBuri.ttf') format('truetype');
     font-weight: normal; /* 폰트 두께 */
@@ -7,6 +7,6 @@
 }
 
 body {
-    font-family: 'Constantia', 'Onul ArticleBuri Regular', serif; /* 폰트 패밀리명을 사용하여 폰트를 적용 */
+    font-family: 'Constantia', 'Onul 아티클 부리 Regular', serif; /* 폰트 패밀리명을 사용하여 폰트를 적용 */
     color: #9298cc;  /* 기타 스타일들 */
 }
