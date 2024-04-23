@@ -10,6 +10,6 @@
 }
 
 body {
-    font-family: 'Constantiat', 'Onul ArticleBuri Regular', serif; /* 폰트 패밀리명을 사용하여 폰트를 적용 */
-    /* 기타 스타일들 */
+    font-family: 'Constantia', 'Onul ArticleBuri Regular', serif; /* 폰트 패밀리명을 사용하여 폰트를 적용 */
+    color: #9298cc;  /* 기타 스타일들 */
 }
