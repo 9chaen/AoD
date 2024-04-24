@@ -8,8 +8,8 @@
     }
 
     nav ul li {
-        display: block; /* 네비게이션 메뉴 항목들을 세로로 배치 */
-        margin-bottom: 10px; /* 항목들 사이 간격 조절 */
+        display: inline-block; /* 네비게이션 메뉴 항목들을 가로로 배치 */
+        margin-right: 10px; /* 항목들 사이 간격 조절 */
     }
 
     nav a {
