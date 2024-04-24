@@ -41,20 +41,20 @@
             border: none;
             background: none;
         }
-        .goods-container {
+        .goods-container .goods-item {
             width: 100px;
-            margin: 0 auto;
-            position: relative;
-            overflow: hidden;
-            margin-top: 20px;
         }
+        
         .goods-slider {
             display: flex;
             transition: transform 0.5s ease;
         }
-        .goods-item {
-            min-width: 100%;
+
+        .goods-slider img {
+            width: 100%; /* 이미지가 부모 요소의 폭을 채우도록 설정 */
+            height: auto; /* 이미지의 세로 비율을 유지함 */
         }
+
         .goods-container button {
             position: absolute;
             top: 50%;
