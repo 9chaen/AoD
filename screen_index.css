@@ -23,17 +23,28 @@
         white-space: nowrap;
     }
 
+
+    #logo {
+        margin: 20px auto;
+        max-width: 50%;
+        display: block; /* 요소를 블록 요소로 변경 */
+        margin-left: auto; /* 왼쪽 여백을 자동으로 설정 */
+        margin-right: auto; /* 오른쪽 여백을 자동으로 설정 */
+        height: auto;
+    }
+
     #description {
-        text-align: center;
-        margin-top: 20px;
-        position: absolute;
         bottom: 20px;
         left: 50%;
         transform: translateX(-50%);
+        text-align: center;
+        display: block;
         width: 80%; /* 너비 설정 */
         white-space: nowrap;
+        display: table-cell;
+        vertical-align: bottom;
     }
-
+   
     .wrapper {
         background-color: #fffffa;
         min-height: 100dvh;
@@ -45,16 +56,7 @@
     .content {
         background: none;
         padding: 10px
-    }
-
-    #logo {
-        margin: 20px auto;
-        max-width: 50%;
-        display: block; /* 요소를 블록 요소로 변경 */
-        margin-left: auto; /* 왼쪽 여백을 자동으로 설정 */
-        margin-right: auto; /* 오른쪽 여백을 자동으로 설정 */
-        height: auto;
-    }
+    } 
 }
 
 /* 중간 크기의 화면에 대한 스타일 */
@@ -90,7 +92,6 @@
     }
 
     #description {
-        position: absolute;
         bottom: 20px;
         left: 50%;
         transform: translateX(-50%);
@@ -98,6 +99,8 @@
         display: block;
         width: 80%; /* 너비 설정 */
         white-space: nowrap;
+        display: table-cell;
+        vertical-align: bottom;
     }
 
     .wrapper {
@@ -138,24 +141,24 @@
         white-space: nowrap;
     }
 
-
-    #description {
-        text-align: center;
-        margin-top: 20px;
-        margin-bottom: 20px;
-        position: block;
-        width: 80%; /* 너비 설정 */
-        margin-left: auto; /* 왼쪽 여백을 자동으로 설정 */
-        margin-right: auto; /* 오른쪽 여백을 자동으로 설정 */
-        white-space: nowrap;
-    }
-
-  #logo {
+    #logo {
         margin: 30px auto; /* 상하 여백을 20px로 설정하고 가운데 정렬 */
         max-width: 50%;
         display: block; /* 요소를 블록 요소로 변경 */
         margin-left: auto; /* 왼쪽 여백을 자동으로 설정 */
         margin-right: auto; /* 오른쪽 여백을 자동으로 설정 */
+    }
+
+    #description {
+        bottom: 20px;
+        left: 50%;
+        transform: translateX(-50%);
+        text-align: center;
+        display: block;
+        width: 80%; /* 너비 설정 */
+        white-space: nowrap;
+        display: table-cell;
+        vertical-align: bottom;
     }
 
     .wrapper {
