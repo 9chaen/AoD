@@ -8,8 +8,8 @@
 
 @font-face {
     font-family: 'Onul ArticleBuri Regular';
-    src: url('Onul ArticleBuri Regular.ttf') format('truetype'),
-    src: url('Onul-ArticleBuri-Regular.woff') format('woff');
+    src: url('Onul-ArticleBuri-Regular.woff') format('woff'),
+    src: url('Onul ArticleBuri Regular.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
