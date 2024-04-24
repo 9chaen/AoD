@@ -26,7 +26,7 @@
 
    .image {
   background-image: url("로고.jpg");
-  background-size: cover;
+  background-size: contain;
 }
 
     #description {
@@ -80,7 +80,7 @@
 
     .image {
   background-image: url("로고.jpg");
-  background-size: cover;
+  background-size: contain;
 }
 
     #description {
@@ -135,7 +135,7 @@
 
    .image {
   background-image: url("로고.jpg");
-  background-size: cover;
+  background-size: contain;
 }
 
     #description {
