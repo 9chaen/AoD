@@ -1,168 +1,71 @@
 /* screen.css */
 
-/* 작은 화면에 대한 스타일 */
-@media screen and (max-width: 599px) {
-    nav ul {
-        margin-left: 0;
-        text-align: left;
-        white-space: nowrap;
-    }
-
-    nav ul li {
-        display: inline;
-        margin-right: 10px;
-        white-space: nowrap;
-    }
-
-    nav a {
-        display: inline;
-    }
-
-    h1 {
-        text-align: left;
-        white-space: nowrap;
-    }
-
-
-   .image {
-  background-image: url("로고.jpg");
-  background-size: 70%;
+/* 모든 화면 크기에 대한 공통 스타일 */
+nav ul {
+    margin-left: 0;
+    text-align: left;
+    white-space: nowrap;
 }
 
-    #description {
-        bottom: 20px;
-        left: 50%;
-        transform: translateX(-50%);
-        text-align: center;
-        display: block;
-        width: 80%; /* 너비 설정 */
-        white-space: nowrap;
-        display: table-cell;
-        vertical-align: bottom;
-    }
-   
-    .wrapper {
-        background-color: #fffffa;
-        min-height: 100dvh;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
+nav ul li {
+    display: inline;
+    margin-right: 10px;
+    white-space: nowrap;
+}
 
-    .content {
-        background: none;
-        padding: 10px
-    } 
+nav a {
+    display: inline;
+}
+
+h1 {
+    text-align: left;
+    white-space: nowrap;
+}
+
+.image {
+    background-image: url("로고.jpg");
+    background-size: 70%;
+}
+
+#description {
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    display: block;
+    width: 80%; /* 너비 설정 */
+    white-space: nowrap;
+    display: table-cell;
+    vertical-align: bottom;
+}
+
+.wrapper {
+    background-color: #fffffa;
+    min-height: 100dvh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content {
+    background: none;
+    padding: 10px
+}
+
+
+/* 작은 화면에 대한 스타일 */
+@media screen and (max-width: 599px) {
+
 }
 
 /* 중간 크기의 화면에 대한 스타일 */
 @media screen and (min-width: 600px) and (max-width: 1284px) {
-    nav ul {
-        margin-left: 0;
-        text-align: left;
-        white-space: nowrap;
-    }
 
-    nav ul li {
-        display: inline;
-        margin-right: 10px;
-        white-space: nowrap;
-    }
-
-    nav a {
-        display: inline;
-    }
-
-    h1 {
-        text-align: left;
-        white-space: nowrap;
-    }
-
-    .image {
-  background-image: url("로고.jpg");
-  background-size: 70%;
-}
-
-    #description {
-        bottom: 20px;
-        left: 50%;
-        transform: translateX(-50%);
-        text-align: center;
-        display: block;
-        width: 80%; /* 너비 설정 */
-        white-space: nowrap;
-        display: table-cell;
-        vertical-align: bottom;
-    }
-
-    .wrapper {
-        background-color: #fffffa;
-        min-height: 100dvh;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .content {
-        background: none;
-        padding: 10px
-    }
-    
 }
 
 /* 큰 화면에 대한 스타일 */
 @media screen and (min-width: 1285px) {
-    nav ul {
-        margin-left: 0;
-        text-align: left;
-        white-space: nowrap;
-    }
-
-    nav ul li {
-        display: inline;
-        margin-right: 10px;
-        white-space: nowrap;
-    }
-
-    nav a {
-        display: inline;
-    }
-
-    h1 {
-        text-align: left;
-        white-space: nowrap;
-    }
-
-   .image {
-  background-image: url("로고.jpg");
-  background-size: 70%;
-}
-
-    #description {
-        bottom: 20px;
-        left: 50%;
-        transform: translateX(-50%);
-        text-align: center;
-        display: block;
-        width: 80%; /* 너비 설정 */
-        white-space: nowrap;
-        display: table-cell;
-        vertical-align: bottom;
-    }
-
-    .wrapper {
-        background-color: #fffffa;
-        min-height: 100dvh;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .content {
-        background: none;
-        padding: 10px
-    }
-    
+   
 }
 
 
