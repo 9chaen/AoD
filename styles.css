@@ -7,19 +7,19 @@
 }
 
 @font-face {
-    font-family: 'Onul 아티클 부리 Regular';
-    src: url('Onul ArticleBuri.ttf') format('truetype'),
-    src: url('Onul ArticleBuri.woff') format('woff');
+    font-family: 'Onul ArticleBuri Regular';
+    src: url('Onul ArticleBuri Regular.ttf') format('truetype'),
+    src: url('Onul-ArticleBuri-Regular.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
 
 body {
-    font-family: 'Constantia', 'Onul 아티클 부리 Regular', Kim jung chul Myungjo Regular, serif;
+    font-family: 'Constantia', 'Onul ArticleBuri Regular', Kim jung chul Myungjo Regular, serif;
     color: #9298cc;
 }
 
 #description {
-    font-family: 'Constantia', 'Onul 아티클 부리 Regular', Kim jung chul Myungjo Regular, serif;
+    font-family: 'Constantia', 'Onul ArticleBuri Regular', Kim jung chul Myungjo Regular, serif;
     color: #9298cc;
 }
