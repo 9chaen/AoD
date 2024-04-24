@@ -30,7 +30,7 @@
 }
 
 /* 중간 크기의 화면에 대한 스타일 */
-@media screen and (min-width: 600px) and (max-width: 1023px) {
+@media screen and (min-width: 600px) and (max-width: 1170px) {
     nav ul {
         margin-left: 0; /* 네비게이션 메뉴 왼쪽 여백 제거 */
         text-align: left; /* 네비게이션 메뉴 왼쪽 정렬 */
@@ -46,7 +46,7 @@
 }
 
 /* 큰 화면에 대한 스타일 */
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1071px) {
     h1 {
         text-align: left; /* 헤더 왼쪽 정렬 */
     }
