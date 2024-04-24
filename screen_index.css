@@ -2,7 +2,7 @@
 
 /* 모든 화면 크기에 대한 공통 스타일 */
 nav ul {
-    margin-left: 10%;
+    margin-left: 5%;
     text-align: left;
     white-space: nowrap;
 }
@@ -18,7 +18,7 @@ nav a {
 }
 
 h1 {
-    margin-left: 20%;
+    margin-left: 5%;
     text-align: left;
     white-space: nowrap;
 }
