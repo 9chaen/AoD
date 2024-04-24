@@ -33,6 +33,9 @@
     #logo {
         margin: 20px auto;
         max-width: 80%;
+        display: block; /* 요소를 블록 요소로 변경 */
+        margin-left: auto; /* 왼쪽 여백을 자동으로 설정 */
+        margin-right: auto; /* 오른쪽 여백을 자동으로 설정 */
         height: auto;
     }
 }
@@ -51,6 +54,9 @@
     #logo {
         margin: 20px auto;
         max-width: 80%;
+        display: block; /* 요소를 블록 요소로 변경 */
+        margin-left: auto; /* 왼쪽 여백을 자동으로 설정 */
+        margin-right: auto; /* 오른쪽 여백을 자동으로 설정 */
         height: auto;
     }
 
@@ -86,10 +92,12 @@
         margin-right: auto; /* 오른쪽 여백을 자동으로 설정 */
     }
 
-   #logo {
-        margin: 20px auto;
+  #logo {
+        margin: 20px auto; /* 상하 여백을 20px로 설정하고 가운데 정렬 */
         max-width: 80%;
-        height: auto;
+        display: block; /* 요소를 블록 요소로 변경 */
+        margin-left: auto; /* 왼쪽 여백을 자동으로 설정 */
+        margin-right: auto; /* 오른쪽 여백을 자동으로 설정 */
     }
 }
 
