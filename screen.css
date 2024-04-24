@@ -1,0 +1,72 @@
+@media (max-width: 767px) {
+.h1 {
+  display: left;
+  font-size: 25px;
+  margin-left: 36px
+   }
+  
+.logo {
+  width: 90%;
+  padding: 20px;
+}
+ 
+  .description {
+    padding: 20px 20px 10px 20px;
+    text-align: center;
+}
+}
+
+
+@media (min-width: 768px) and (max-width: 991px) {
+.h1 {
+  display: left;
+  font-size: 35px;
+  margin-left: 46px
+   }
+  
+.logo {
+  width: 90%;
+  padding: 30px;
+}
+ 
+  .description {
+    padding: 30px 30px 10px 30px;
+    text-align: center;
+}
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+.h1 {
+  display: left;
+  font-size: 35px;
+  margin-left: 46px
+   }
+  
+.logo {
+  width: 90%;
+  padding: 30px;
+}
+ 
+  .description {
+    padding: 100px 100px 10px 20px;
+    text-align: center;
+}
+}
+
+@media (min-width: 1200px) {
+.h1 {
+  display: left;
+  font-size: 36px;
+  margin-left: 45px
+   }
+  
+.logo {
+  width: 90%;
+  padding: 80px auto;
+}
+ 
+  .description {
+    padding: 100px 100px 10px 20px;
+    text-align: center;
+}
+}
