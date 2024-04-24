@@ -1,4 +1,4 @@
-@media (max-width: 767px) {
+@media (max-width: 1170px) {
 .h1 {
   display: left;
   font-size: 25px;
@@ -11,13 +11,13 @@
 }
  
   .description {
-    padding: 20px 20px 10px 20px;
+    padding: 10px auto;
     text-align: center;
 }
 }
 
 
-@media (min-width: 768px) and (max-width: 991px) {
+@media (min-width: 1171px) and (max-width: 1640px) {
 .h1 {
   display: left;
   font-size: 35px;
@@ -26,16 +26,16 @@
   
 .logo {
   width: 90%;
-  padding: 30px;
+  padding: 80px auto;
 }
  
   .description {
-    padding: 30px 30px 10px 30px;
+    padding: 10px auto;
     text-align: center;
 }
 }
 
-@media (min-width: 992px) and (max-width: 1199px) {
+@media (min-width: 1641px) and (max-width: 2360px) {
 .h1 {
   display: left;
   font-size: 35px;
@@ -44,16 +44,16 @@
   
 .logo {
   width: 90%;
-  padding: 30px;
+  padding: 80px auto;
 }
  
   .description {
-    padding: 100px 100px 10px 20px;
+    padding: 10px auto;
     text-align: center;
 }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 2360px) {
 .h1 {
   display: left;
   font-size: 36px;
@@ -66,7 +66,7 @@
 }
  
   .description {
-    padding: 100px 100px 10px 20px;
+    padding: 10px auto;
     text-align: center;
 }
 }
