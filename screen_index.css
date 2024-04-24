@@ -31,9 +31,11 @@ h1 {
 }
 
 #description {
-    text-align: center;
-    margin-bottom: 30px;
-    font-size: 13pt;
-    line-height: 20pt;
+    display: flex; /* 요소를 행으로 배치합니다. */
+    justify-content: center; /* 수평 가운데 정렬합니다. */
+    align-items: flex-end; /* 아래에서 정렬합니다. */
+    text-align: center; /* 텍스트는 가운데 정렬합니다. */
+    height: 90vh; /* 화면 높이의 90%만큼의 높이를 가집니다. */
+    margin-bottom: 10vh; /* 하단에서 10%만큼의 간격을 띄웁니다. */
 }
 
