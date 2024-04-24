@@ -23,7 +23,7 @@ h1 {
 }
 
 .background {
-  background-image: url('로고.jpg');
+  background-image: url('logo.jpg');
   background-size: cover; /* 이미지를 화면에 맞게 조절 */
   background-position: center; /* 이미지를 가운데 정렬 */
   height: 300px;
