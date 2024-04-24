@@ -105,37 +105,37 @@
             <br><br><br>148*210mm / 2종 / 1 장 1,500원</p>
     </div>
     <script>
-        let slideIndex = 1;
+    let slideIndex = 1;
 
-        function showSlides() {
-            const slides = document.querySelectorAll('.book-item');
-            if (slideIndex < 1) {
-                slideIndex = slides.length;
-            }
-            if (slideIndex > slides.length) {
-                slideIndex = 1;
-            }
-            slides.forEach(slide => {
-                slide.style.display = 'none';
-            });
-            slides[slideIndex - 1].style.display = 'block';
+    function showSlides() {
+        const slides = document.querySelectorAll('.goods-item');
+        if (slideIndex < 1) {
+            slideIndex = slides.length;
         }
-
-        function prevSlide() {
-            slideIndex--;
-            showSlides();
+        if (slideIndex > slides.length) {
+            slideIndex = 1;
         }
+        slides.forEach(slide => {
+            slide.style.display = 'none';
+        });
+        slides[slideIndex - 1].style.display = 'block';
+    }
 
-        function nextSlide() {
-            slideIndex++;
-            showSlides();
-        }
-
+    function prevSlide() {
+        slideIndex--;
         showSlides();
+    }
 
-        function goBack() {
-            window.history.back();
-        }
+    function nextSlide() {
+        slideIndex++;
+        showSlides();
+    }
+
+    showSlides();
+
+    function goBack() {
+        window.history.back();
+    }
     </script>
 </body>
 </html>
