@@ -8,12 +8,12 @@
     }
 
     nav ul li {
-        display: inline-block;
+        display: inline;
         margin-right: 10px;
     }
 
     nav a {
-        display: inline-block;
+        display: inline;
     }
 
     h1 {
@@ -32,7 +32,7 @@
 
     #logo {
         margin: 20px auto;
-        max-width: 80%;
+        max-width: 50%;
         display: block; /* 요소를 블록 요소로 변경 */
         margin-left: auto; /* 왼쪽 여백을 자동으로 설정 */
         margin-right: auto; /* 오른쪽 여백을 자동으로 설정 */
@@ -45,6 +45,15 @@
     nav ul {
         margin-left: 0;
         text-align: left;
+    }
+
+    nav ul li {
+        display: inline;
+        margin-right: 10px;
+    }
+
+    nav a {
+        display: inline;
     }
 
     h1 {
@@ -73,28 +82,38 @@
 
 /* 큰 화면에 대한 스타일 */
 @media screen and (min-width: 1285px) {
-    h1 {
-        text-align: left;
-    }
-
     nav ul {
         margin-left: 0;
         text-align: left;
     }
 
+    nav ul li {
+        display: inline;
+        margin-right: 10px;
+    }
+
+    nav a {
+        display: inline;
+    }
+
+    h1 {
+        text-align: left;
+    }
+
+
     #description {
         text-align: center;
         margin-top: 20px;
         margin-bottom: 20px;
-        position: static; /* position을 static으로 변경 */
+        position: block;
         width: 80%; /* 너비 설정 */
         margin-left: auto; /* 왼쪽 여백을 자동으로 설정 */
         margin-right: auto; /* 오른쪽 여백을 자동으로 설정 */
     }
 
   #logo {
-        margin: 20px auto; /* 상하 여백을 20px로 설정하고 가운데 정렬 */
-        max-width: 80%;
+        margin: 30px auto; /* 상하 여백을 20px로 설정하고 가운데 정렬 */
+        max-width: 50%;
         display: block; /* 요소를 블록 요소로 변경 */
         margin-left: auto; /* 왼쪽 여백을 자동으로 설정 */
         margin-right: auto; /* 오른쪽 여백을 자동으로 설정 */
