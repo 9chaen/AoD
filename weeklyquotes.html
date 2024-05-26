@@ -16,33 +16,36 @@
             margin-top: 20px;
             margin-left: 30px;
         }
-        h2 {
+         h2 {
             font-size: 35px;
             margin-top: 20px;
             margin-left: 35px;
         }
         .quote-container {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-            grid-gap: 70px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: flex-start;
             margin-top: 20px;
         }
     
         .quote-item {
+            flex: 1 1 20%;
+            max-width: 20%;
+            box-sizing: border-box;
+            margin: 35px 20px 35px 0; /* margin-right 조정 */
             text-align: left;
             padding: 10px;
-            box-sizing: border-box;
         }
         .quote-item img {
-            width: auto;
-            height: 300px;
-            display: block;
-            margin: 0 auto 10px auto; /* 수평 가운데 정렬 및 아래 여백 추가 */
+            width: auto; /* 이미지가 부모 요소의 폭을 채우도록 설정 */
+            height: 300px; /* 이미지의 세로 비율을 유지함 */
+            display: block; /* 이미지를 블록 요소로 설정하여 수직 정렬이 제대로 이루어지도록 함 */
+            margin-bottom: 10px; /* 이미지 아래 여백 추가 */
         }
         .quote-title {
             margin-top: 7px;
-            color: #9298cc;
-            text-decoration: none !important;
+            color: #9298cc; /* 텍스트 색상 */
+            text-decoration: none !important; /* 밑줄 제거 */
         }
         
         /* 링크 스타일 제거 및 글자 색상 지정 */
@@ -53,13 +56,14 @@
         nav ul li {
             display: inline;
             margin-left: 30px;
-            margin-right: 20px;
+            margin-right: 20px; /* 각 항목 사이 간격 조절 */
         }
         nav a {
-            text-decoration: none;
-            color: #9298cc;
-            padding: 10px;
+            text-decoration: none; /* 밑줄 제거 */
+            color: #9298cc; /* 버튼 글자색 */
+            padding: 10px; /* 버튼 간격 조절 */
         }
+        /* 버튼 사이 공백 조절 */
         nav a:not(:last-child) {
             margin-right: 20px;
         }
@@ -71,20 +75,21 @@
             display: inline;
         }
         h1 a {
-            text-decoration: none;
-            color: #9298cc;
-            padding: 10px;
+            text-decoration: none; /* 밑줄 제거 */
+            color: #9298cc; /* 버튼 글자색 */
+            padding: 10px; /* 버튼 간격 조절 */
         }
         a {
-            text-decoration: none;
-            color: #9298cc;
+            text-decoration: none; /* 밑줄 제거 */
+            color: #9298cc; /* 텍스트 색상 변경 */
+            /* 다른 원하는 스타일 추가 */
         }
         footer {
             text-align: center;
-            margin-top: 50px;
-            padding: 20px 0;
+            margin-top: 50px; /* 페이지 맨 아래에서의 여백 조절 */
+            padding: 20px 0; /* 푸터 내부 여백 조절 */
             color: #9298cc;
-            background-color: none;
+            background-color: none; /* 푸터 배경색 */
         }
     </style>
 </head>
@@ -105,39 +110,39 @@
     <div class="quote-container">
         <div class="quote-item">
             <a href="quote240526.html">
-                <img src="quote 240526 00.jpeg" alt="quote6">
+                <img src="quote 240526 00.jpeg" width="auto" height="300px" alt="quote4">
                 <p class="quote-title">2024.05.26.</p>
             </a>
         </div>
         
         <div class="quote-item">
             <a href="quote240516.html">
-                <img src="quote 240516 00.jpeg" alt="quote5">
+                <img src="quote 240516 00.jpeg" width="auto" height="300px" alt="quote5">
                 <p class="quote-title">2024.05.16.</p>
             </a>
         </div>
         
         <div class="quote-item">
             <a href="quote240509.html">
-                <img src="quote 240509 00.jpg" alt="quote4">
+                <img src="quote 240509 00.jpg" width="auto" height="300px" alt="quote4">
                 <p class="quote-title">2024.05.09.</p>
             </a>
         </div>
         <div class="quote-item">
             <a href="quote240430.html">
-                <img src="quote 240430 00.jpg" alt="quote3">
+                <img src="quote 240430 00.jpg" width="auto" height="300px" alt="quote3">
                 <p class="quote-title">2024.04.30.</p>
             </a>
         </div>
         <div class="quote-item">
             <a href="quote240422.html">
-                <img src="quote 240422 00.jpg" alt="quote2">
+                <img src="quote 240422 00.jpg" width="auto" height="300px" alt="quote2">
                 <p class="quote-title">2024.04.22.</p>
             </a>
         </div>
         <div class="quote-item">
             <a href="quote240420.html">
-                <img src="quote 240420 00.jpg" alt="quote1">
+                <img src="quote 240420 00.jpg" width="auto" height="300px" alt="quote1">
                 <p class="quote-title">2024.04.20.</p>
             </a>
         </div>
